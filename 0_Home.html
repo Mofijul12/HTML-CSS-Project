@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front_Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content:center;
+            padding: 20px;
+            background-image: url(abstract-textured-backgound.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-color: black;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .btn16 {
+            color: white;
+            border: 2px solid #636e72;
+            background: transparent;
+            position: relative;
+        }
+        .btn16::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #636e72;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+            z-index: -1;
+        }
+        .btn16:hover {
+            color: white;
+            transform: translateY(-5px);
+        }
+        .btn16:hover::after {
+            transform: scale(1);
+        }
+        #info{
+            border: 3px solid;
+            border-radius: 20px;
+            width: 500px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s;
+        }
+
+        #info:hover{
+            background-color: black;
+            transform: translateY(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="bt">
+        <button class="button btn16"><a href="#">Home</a></button>
+        <button class="button btn16"><a  href="Chapter_01.html">Chapter 1</a></button>
+        <button class="button btn16"><a  href="Chapter_02.html">Chapter 2</a></button>
+        <button class="button btn16"><a  href="Chapter_03.html">Chapter 3</a></button>
+        <button class="button btn16"><a  href="Chapter_04.html">Chapter 4</a></button>
+        <button class="button btn16"><a  href="Chapter_05.html">Chapter 5</a></button>
+        <button class="button btn16"><a  href="Chapter_06.html">Chapter 6</a></button>
+        <button class="button btn16"><a  href="Chapter_07.html">Chapter 7</a></button>
+        <button class="button btn16"><a  href="Chapter_011.html">Chapter 11</a></button>
+        <button class="button btn16"><a  href="Chapter_012.html">Chapter 12</a></button>
+        <button class="button btn16"><a  href="Chapter_013.html">Chapter 13</a></button>
+        <button class="button btn16"><a  href="Chapter_014.html">Chapter 14</a></button>
+        <button class="button btn16"><a  href="Chapter_015.html">Chapter 15</a></button>
+        <button class="button btn16"><a  href="Chapter_016.html">Chapter 16</a></button>
+        <button class="button btn16"><a  href="Chapter_017.html">Chapter 17</a></button>
+        <button class="button btn16"><a  href="Chapter_018.html">Chapter 18</a></button>
+        <button class="button btn16"><a  href="Chapter_019.html">Chapter 19</a></button>
+        <button class="button btn16"><a  href="Chapter_020.html">Chapter 20</a></button>
+        <button class="button btn16"><a  href="Chapter_021.html">Chapter 21</a></button>
+        <button class="button btn16"><a  href="Chapter_022.html">Chapter 22</a></button>
+    </div>
+    
+    <div id="info">
+        <p>Name: Mofijul Islam</p>
+        <p>Trainee ID: 1285417</p>
+        <p>Batch: CS/PNTL-A/62/01</p>
+        <p>Project: HTML & CSS</p>
+    </div>
+</body>
+</html>

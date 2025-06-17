@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter_014</title>
+    <link rel="stylesheet" href="Chapter_014.css">
+    <style>
+      .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <a href="0_Home.html" class="back-to-home">Back to Home</a>
+  <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 14</h1>
+
+  <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Border Box</h3>
+    <!-- Border Box -->
+    <div class="bb">
+        <pre id="my-element">
+            #my-element {
+            width: 350px;
+            height: 350px;
+            padding: 15px;
+            border: 3px solid rgb(1, 208, 255);
+            margin: 8px;
+            box-sizing: border-box;
+        }
+        </pre
+            >
+            <span id="result"></span>
+            <script>
+              var myElement = document.getElementById("my-element");
+              var width = myElement.offsetWidth;
+              var height = myElement.offsetHeight;
+              document.getElementById("result").innerHTML = "Element size:
+              width = " + width + ", height = " + height;"
+            </script>
+    </div>
+    <br>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Content Box</h3>
+    <!-- Content Box -->
+     <div class="cb">
+        <pre id="my-element">
+            #my-element {
+            width: 300px;
+            height: 300px;
+            padding: 15px;
+            border: 5px solid rgba(179, 255, 0, 0.557);
+            margin: 8px;
+            box-sizing: content-box;
+        }
+        </pre
+            >
+            <span id="result"></span>
+            <script>
+              var myElement = document.getElementById("my-element");
+              var width = myElement.offsetWidth;
+              var height = myElement.offsetHeight;
+              document.getElementById("result").innerHTML = "Element size:
+              width = " + width + ", height = " + height;"
+            </script>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">CSS Margin</h3>
+    <!-- Css Margin -->
+     <div class="cm">
+        <div id="parent">
+            <div id="child">
+              This element has a top margin of 70px, a right margin of 30px, a bottom
+              margin of 60px, and a left margin of 40px.
+            </div>
+          </div>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Auto Margin</h3>
+    <!-- Auto Margin -->
+     <div class="am">
+        <div id="parent">
+            <div id="child">Auto margin is applied .</div>
+          </div>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Collapsing Margin</h3>
+     <!-- Collapsing Margin -->
+      <div class="clm">
+        <div id="parent">
+            <div id="child-one">This element has a margin of 35px.</div>
+            <div id="child-two">This element has a margin of 65px.</div>
+          </div>
+      </div>
+      <br>
+
+
+      <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">CSS Outline</h3>
+    <!-- Css Outline -->
+     <div class="out">
+        <p>Outline is applied</p>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Border Style</h3>
+    <!-- Border Style -->
+     <div class="bs">
+        <p>This is a latter.</p>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Border Radius Element</h3>
+    <!-- Border Radius -->
+     <div class="br">
+        <p>border-radius: 8px:</p>
+    <p id="p1"></p>
+    <p>border-radius: 50%:</p>
+    <p id="p2"></p>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">CSS Padding</h3>
+    <!-- Css Padding -->
+     <div class="csp">
+        <p>This is a latter.</p>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Width Height</h3>
+    <!-- Width & Height -->
+     <div class="wh">
+        <p>This is a latter.</p>
+     </div>
+</body>
+</html>

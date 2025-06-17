@@ -1,0 +1,159 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.txr{
+    p {
+        color: rgba(255, 0, 0, 0.779);
+      }
+}
+
+#txd{
+    p {
+        text-decoration-line: underline;
+      }
+      .p1 {
+        text-decoration-style: double;
+      }
+      .p2 {
+        text-decoration-style: dotted;
+      }
+      .p3 {
+        text-decoration-style: dashed;
+      }
+      .p4 {
+        text-decoration-style: wavy;
+      }
+}
+
+.txt{
+    p {
+        text-transform: capitalize;
+      }
+}
+
+.wp{
+    p {
+        white-space: pre-wrap;
+      }
+}
+
+#of{
+    .test-clip {
+        white-space: nowrap;
+        width: 250px;
+        border: 1px solid #1898e2;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+      .test-ellipsis {
+        white-space: nowrap;
+        width: 250px;
+        border: 1px solid #11e838;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+}
+
+#wp{
+    .test-word-wrap {
+        width: 250px;
+        border: 1px solid #18d703;
+        word-wrap: break-word;
+      }
+}
+
+#wb{
+    p[class] {
+        width: 150px;
+        border: 1px solid #0f9306;
+      }
+      .test-keep-all {
+        word-break: keep-all;
+      }
+
+      .test-break-word {
+        word-break: break-word;
+      }
+      .test-break-all {
+        word-break: break-all;
+      }
+}
+
+#lp{
+    .test-one {
+        letter-spacing: -1px;
+      }
+      .test-two {
+        letter-spacing: 2px;
+      }
+}
+
+#wsp{
+    .test-one {
+        word-spacing: -6px;
+      }
+      .test-two {
+        word-spacing: 6px;
+      }
+}
+
+#ln{
+    p {
+        border: 1px solid rgb(217, 15, 15);
+        font-size: 25px;
+      }
+      .test-one {
+        line-height: 90%; /* 20px * 80% = 16px */
+      }
+      .test-two {
+        line-height: 2.5; /* 20px * 2.3 = 46px */
+      }
+}
+
+#txa{
+    p {
+        width: 300px;
+        height: 100px;
+        border: 2px solid rgb(55, 255, 0);
+      }
+      .test-one {
+        text-align: justify;
+      }
+      .test-two {
+        text-align: center;
+      }
+      .test-three {
+        text-align: right;
+      }
+}
+
+#txi{
+    p {
+        width: 300px;
+        width: 100px;
+        border: 2px solid rgb(130, 8, 8);
+      }
+      .test {
+        text-indent: 25px;
+      }
+}
+
+#cf{
+    p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+}
+
+#fs{
+    p{
+        font-size: 30px;
+    }
+}
+
+#fv{
+    p {
+        font-variant: small-caps;
+      }
+}

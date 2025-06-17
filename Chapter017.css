@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.bc h2{
+    background-color: aqua;
+}
+
+.bimg img{
+    width: 800px;
+    display: flex;
+    border: 2px solid;
+}
+
+.bimg{
+    display: flex;
+    justify-content: center;
+}
+
+.lg{
+    p {
+        height: 100px;
+        background: linear-gradient(
+          rgba(255, 0, 0, 0.612),
+          rgba(255, 255, 0, 0.509)
+        );
+      }
+}
+
+.rpl{
+    p {
+        height: 120px;
+        background: repeating-linear-gradient(
+          rgba(255, 0, 0, 0.63),
+          rgba(255, 255, 0, 0.459) 30%,
+          rgba(0, 128, 0, 0.795) 50%
+        );
+      }
+}
+
+.rdg{
+    p {
+        height: 150px;
+        background: radial-gradient(
+          rgba(255, 0, 0, 0.626),
+          rgba(255, 255, 0, 0.623),
+          rgba(0, 128, 0, 0.861)
+        );
+      }
+}

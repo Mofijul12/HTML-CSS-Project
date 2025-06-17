@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter_013</title>
+    <link rel="stylesheet" href="Chapter_013.css">
+    <style>
+      .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <a href="0_Home.html" class="back-to-home">Back to Home</a>
+  <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 13</h1>
+
+  <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> The last Declaration Will Win</h3>
+    <!-- The Last Declaration will win -->
+     <div class="last">
+    <h1>This is the last declaration</h1>
+    <p>This is an paragraphy</p>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> More Specific Declaration Will Win</h3>
+      <!-- More Specific Declaration Will Win -->
+      <div class="ms">
+        <h1 id="line-one" class="line first">My First Line</h1>
+    <p>My first paragraph.</p>
+    <h1 id="line-two" class="line">My Second Line</h1>
+    <p>My second paragraph.</p>
+      </div>
+      <br>
+
+      <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Inline Style Is Prefered </h3>
+    <!-- Inline Style is Prefered -->
+     <div>
+        <h1 id="heading-one" style="color: rgb(255, 0, 255)">
+            The color on this line came from Inline Style
+        </h1>
+        <p>This is an paragraph</p>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Declaration is the Strongest Rule</h3>
+     <!-- Declaration is the Strongest Rule -->
+      <div>
+        <h1 id="line-one" style="color: rgb(255, 0, 238)">My First Line</h1>
+        <p>My second line.</p>
+      </div>
+      <br>
+
+      <div class="inh">
+        <article class="parent">
+            <h1>Heading</h2>
+            <p class="line first-line">First line.</p>
+            <p class="line second-line">Second line.</p>
+      </div>
+</body>
+</html>

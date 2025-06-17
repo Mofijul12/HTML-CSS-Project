@@ -1,0 +1,42 @@
+.last{
+    h1 {
+        color: rgb(128, 73, 0);
+      }
+      h1 {
+        color: rgb(9, 255, 0);
+      }
+      h1 {
+        color: rgb(0, 225, 255);
+      }
+
+      h1 {
+        color: rgba(36, 2, 255, 0.792);
+      }
+    }
+
+.ms{
+    h1 {
+        color: rgb(255, 0, 0);
+      }
+      * {
+        color: rgb(81, 0, 255);
+      }
+}
+
+#heading-one {
+    color: rgb(105, 128, 0);
+  }
+
+.inh{
+    .parent {
+        color: rgb(0, 251, 255);
+       }
+       
+      .line {
+        color: rgb(128, 83, 0);
+       }
+       
+      .first-line {
+        color: inherit;
+       }
+}

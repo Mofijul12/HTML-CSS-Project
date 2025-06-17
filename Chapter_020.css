@@ -1,0 +1,173 @@
+.ct{
+    p {
+        width: 90px;
+        height: 90px;
+        color: rgb(20, 36, 213);
+        background-color: aqua;
+        transition: width 3s;
+      }
+    p:hover{
+        width: 250px;
+    }
+}
+
+.bt{
+    div {
+        width: 90px;
+        height: 90px;
+        color: rgba(255, 255, 255, 0.806);
+        background: rgb(99, 6, 6);
+        transition: width 2s;
+      }
+      div:hover {
+        width: 350px;
+      }
+}
+
+.td{
+    div {
+        width: 90px;
+        height: 90px;
+        color: rgba(255, 255, 255, 0.783);
+        background: rgba(108, 124, 227, 0.895);
+        transition: width 2s, height 4s;
+        transition-delay: 3s;
+      }
+      div:hover {
+        width: 350px;
+        height: 350px;
+      }
+}
+
+.tt{
+    div {
+        width: 90px;
+        height: 90px;
+        color: rgba(210, 232, 216, 0.824);
+        background: rgb(11, 80, 4);
+        transition: width 3s, height 5s;
+        transition-timing-function: ease-out;
+      }
+
+      div:hover {
+        width: 350px;
+        height: 350px;
+      }
+}
+
+.ani{
+    @keyframes my-animation {
+        from {
+          background-color: rgba(0, 255, 4, 0.881);
+        }
+        to {
+          background-color: rgba(255, 255, 0, 0.452);
+        }
+      }
+      div {
+        width: 120px;
+        height: 120px;
+        background-color: rgba(17, 37, 214, 0.881);
+        animation-name: my-animation;
+        animation-duration: 5s;
+      }
+}
+
+.mkf{
+    @keyframes animation {
+        0% {
+          background-color: rgba(165, 79, 79, 0.822);
+        }
+        25% {
+          background-color: rgba(23, 185, 218, 0.886);
+        }
+        50% {
+          background-color: rgba(218, 17, 111, 0.861);
+        }
+        100% {
+          background-color: rgba(3, 42, 3, 0.922);
+        }
+      }
+      div {
+        width: 90px;
+        height: 90px;
+        background-color: rgba(0, 255, 255, 0.804);
+        animation-name: animation;
+        animation-duration: 5s;
+      }
+}
+
+.ad{
+    @keyframes my-animation {
+        0% {
+          background-color:red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: rgba(206, 13, 16, 0.094);
+        }
+        100% {
+          background-color: rgba(182, 207, 78, 0.872);
+        }
+      }
+      div {
+        width: 190px;
+        height: 190px;
+        background-color: rgba(255, 13, 13, 0.997);
+        animation-name: my-animation;
+        animation-duration: 5s;
+        animation-delay: 3s;
+      }
+}
+
+
+@keyframes my-animation {
+    0% {
+      background-color: rgba(217, 255, 0, 0.781);
+    }
+    25% {
+      background-color: rgba(255, 0, 8, 0.84);
+    }
+    50% {
+      background-color: rgba(0, 0, 255, 0.788);
+    }
+    100% {
+      background-color: rgba(128, 0, 109, 0.808);
+    }
+  }
+.anim{
+   
+    div{
+        width: 190px;
+        height: 190px;
+        background-color: rgba(0, 255, 255, 0.717);
+        animation-name: my-animation;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+      }
+}
+
+@keyframes animation-direction {
+    from {
+      left: 0;
+    }
+    to {
+      left: 400px;
+    }
+  }
+
+.and{
+         div {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: rgba(38, 255, 9, 0.959);
+        animation-name: my-animation;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-direction: reverse;
+      }
+  }
+

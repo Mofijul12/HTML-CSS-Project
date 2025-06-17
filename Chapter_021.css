@@ -1,0 +1,56 @@
+.variable{
+    :root {
+        --a-global-color: rgba(57, 69, 7, 0.952);
+      }
+      section {
+        --a-local-color: rgba(255, 0, 234, 0.932);
+      }
+      header {
+        color: var(--a-global-color);
+      }
+      footer {
+        color: var(--a-local-color);
+      }
+}
+
+.calculation{
+    header,
+    footer {
+      height: 40px;
+      line-height: 40px;
+    }
+    header {
+      border-bottom: 1px solid rgba(214, 12, 12, 0.888);
+    }
+    footer {
+      border-top: 1px solid rgba(240, 16, 16, 0.845);
+      text-align: center;
+    }
+
+    .main-content {
+      min-height: calc(100vh - 90px);
+    }
+    .long-content {
+      border: 1px solid #0cb032dd;
+      /* height: 1000px; */
+    }
+}
+
+body {
+    font-size: 15px;
+    counter-reset: my-section;
+  }
+  h1 {
+    counter-reset: my-sub-section;
+  }
+  h1::before {
+    counter-increment: my-section;
+
+    content: "Section " counter(my-section) ". ";
+  }
+  h2::before {
+    counter-increment: my-sub-section;
+    content: counter(my-section) "." counter(my-sub-section) " ";
+  }
+
+  

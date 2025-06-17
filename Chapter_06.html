@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter_06</title>
+    <style>
+      video{
+        justify-content: center;
+        width: 800px;
+      }
+      .vdo{
+        display: flex;
+        justify-content: center;
+      }
+
+      .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+  </head>
+  <body>
+    <a href="0_Home.html" class="back-to-home">Back to Home</a>
+    <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 06</h1>
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Audio</h3>
+    <!-- Audio -->
+    <audio controls>
+      <source src="Image and Video/Maher Zain - Rahmatun LilAlameen (Official Music Video) ماهر زين - رحمة للعالمين.mp3" type="audio/ogg" />
+    </audio>
+    <br><br><br>
+
+    
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Video</h3>
+    <!-- Video -->
+    <body>
+      <div class="vdo">
+        <video src="Image and Video/videoplayback.mp4" controls autoplay loop></video>
+      </div>
+    </body>
+  </body>
+</html>

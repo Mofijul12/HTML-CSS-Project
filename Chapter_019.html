@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter_019</title>
+    <link rel="stylesheet" href="Chapter_019.css">
+    <style>
+      .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <a href="0_Home.html" class="back-to-home">Back to Home</a>
+  <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 19</h1>
+    <!-- Realative -->
+     <div class="rel">
+        <div class="parent">
+            <div class="normal">Hello Bangladesh</div>
+            <div class="relative">This is Realative</div>
+          </div>
+     </div>
+     <br><br>
+
+    <!-- Absolute -->
+      <div class="abs">
+        <div class="positioned">
+            <div class="non-positioned">
+              <div class="absolute">Hello Bangladesh</div>
+            </div>
+          </div>
+      </div>
+      <br><br>
+
+    <!-- Fixed -->
+      <div class="fixed">
+        <body>
+            <div>Element</div>
+            <div class="fixed">This is Fixed!</div>
+            <div class="big">Big element.</div>
+          </body>
+      </div>
+      <br><br>
+
+    <!-- Sticky -->
+       <div class="sticky">
+        <div class="parent">
+            <p>
+              Try to scroll inside this frame to understand how sticky positioning
+              works.
+            </p>
+            <div class="sticky1">I am sticky!</div>
+            <p>
+              In this example, the sticky element sticks to the top of the page when
+              it reaches the position "top: 0".
+            </p>
+            <p>Scroll back up to remove the stickiness.</p>
+            <p>
+              Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+              concludaturque et eum, altera fabulas ut quo.
+            </p>
+          </div>
+       </div>
+       <br><br>
+
+    <!-- Float -->
+    <div class="float">
+        <div class="container">
+            <div class="child">I'm the 1st element</div>
+            <div class="child">I'm the 2nd element</div>
+          </div>  
+    </div>
+    <br><br>
+
+    <!-- Clear -->
+     <div class="clear">
+        <div class="container">
+            <div class="float">I'm the 1st element</div>
+            <div class="float">I'm the 2nd element</div>
+            <div class="no-float">I'm the 3rd element</div>
+          </div>
+     </div>
+     <br><br>
+
+
+    <!-- Z-Index -->
+     <div class="z">
+        <div class="container">
+            <div class="absolute child z-index-minus-two">z-index: -3</div>
+            <div class="absolute child z-index-minus-one">z-index: -1</div>
+            <div class="absolute child z-index-zero">z-index: 0</div>
+            <div class="absolute child z-index-one">z-index: 2</div>
+            <div class="child z-index-two">z-index: 2; but I'm not positioned</div>
+          </div>
+     </div>
+     <br><br>
+
+
+     <!-- FlexBox -->
+    <div class="flex">
+        <div class="flex-container">
+            <div class="flex-item item1">flex num 1</div>
+            <div class="flex-item item2">flex num 2</div>
+            <div class="flex-item item3">flex num 3</div>
+          </div>
+    </div>
+    <br><br>
+
+
+    <!-- Flex Container -->
+    <div class="fc">
+        <body>
+            <div class="flex-container">
+              <div class="flex-item item1">flex item 1</div>
+              <div class="flex-item item2">flex item 2</div>
+              <div class="flex-item item3">flex item 3</div>
+            </div>
+          </body>
+    </div>
+    <br><br>
+
+
+    <!-- Order -->
+     <div class="order">
+        <div class="flex-container">
+            <div class="flex-item item1">flex num 1</div>
+            <div class="flex-item item2">flex num 2</div>
+            <div class="flex-item item3">flex num 3</div>
+          </div>
+     </div>
+     <br><br>
+
+
+     <!-- Flex Grow -->
+      <div class="fg">
+        <div class="flex-container">
+            <div class="flex-item item1">flex num 1</div>
+            <div class="flex-item item2">flex num 2</div>
+            <div class="flex-item item3">flex num 3</div>
+          </div>
+      </div>
+      <br><br>
+
+
+      <!-- Flex Shrink -->
+       <div class="fs">
+        <div class="flex-container">
+            <div class="flex-item item1">Num 1</div>
+            <div class="flex-item item2">Num 2</div>
+            <div class="flex-item item3">Num 3</div>
+            <div class="flex-item item4">Num 4</div>
+            <div class="flex-item item5">Num 5</div>
+          </div>
+       </div>
+       <br><br>
+
+
+    <!-- CSS Grid -->
+     <div class="g">
+        <div class="grid-container">
+            <div class="grid-item item1">Item 1</div>
+            <div class="grid-item item2">Item 2</div>
+            <div class="grid-item item3">Item 3</div>
+            <div class="grid-item item4">Item 4</div>
+            <div class="grid-item item5">Item 5</div>
+            <div class="grid-item item6">Item 6</div>
+            <div class="grid-item item7">Item 7</div>
+            <div class="grid-item item8">Item 8</div>
+            <div class="grid-item item9">Item 9</div>
+          </div>
+     </div>
+     <br><br>
+
+
+     <!-- Grid Container -->
+      <div class="gc">
+        <div class="grid-container">
+            <div class="grid-item item1">Num 1</div>
+            <div class="grid-item item2">Num 2</div>
+            <div class="grid-item item3">Num 3</div>
+            <div class="grid-item item4">Num 4</div>
+            <div class="grid-item item5">Num 5</div>
+            <div class="grid-item item6">Num 6</div>
+            <div class="grid-item item7">Num 7</div>
+            <div class="grid-item item8">Num 8</div>
+            <div class="grid-item item9">Num 9</div>
+            </div>
+      </div>
+      <br><br>
+
+
+      <!-- Grid Template -->
+       <div class="gt">
+        <div class="grid-container">
+            <div class="grid-item item1">Num 1</div>
+            <div class="grid-item item2">Num 2</div>
+            <div class="grid-item item3">Num 3</div>
+            <div class="grid-item item4">Num 4</div>
+            <div class="grid-item item5">Num 5</div>
+            <div class="grid-item item6">Num 6</div>
+            <div class="grid-item item7">Num 7</div>
+            <div class="grid-item item8">Num 8</div>
+            <div class="grid-item item9">Num 9</div>
+          </div>
+       </div>
+       <br><br>
+
+
+    <!--Coumn Gap  -->
+    <div class="cg">
+        <div class="grid-container">
+            <div class="grid-item item1">Num 1</div>
+            <div class="grid-item item2">Num 2</div>
+            <div class="grid-item item3">Num 3</div>
+            <div class="grid-item item4">Num 4</div>
+            <div class="grid-item item5">Num 5</div>
+            <div class="grid-item item6">Num 6</div>
+            <div class="grid-item item7">Num 7</div>
+            <div class="grid-item item8">Num 8</div>
+            <div class="grid-item item9">Num 9</div>
+          </div>
+    </div>
+    <br><br>
+
+
+    <!-- Row Gap -->
+     <div class="rg">
+        <div class="grid-container">
+            <div class="grid-item item1">Num 1</div>
+            <div class="grid-item item2">Num 2</div>
+            <div class="grid-item item3">Num 3</div>
+            <div class="grid-item item4">Num 4</div>
+            <div class="grid-item item5">Num 5</div>
+            <div class="grid-item item6">Num 6</div>
+            <div class="grid-item item7">Num 7</div>
+            <div class="grid-item item8">Num 8</div>
+            <div class="grid-item item9">Num 9</div>
+          </div>
+     </div>
+     <br><br>
+
+
+    <!-- Template Area -->
+     <div class="ta">
+        <div class="grid-container">
+            <div class="grid-item item1">Header</div>
+            <div class="grid-item item2">Menu</div>
+            <div class="grid-item item3">Main</div>
+            <div class="grid-item item4">Sidebar</div>
+            <div class="grid-item item5">Footer</div>
+          </div>
+     </div>
+     <br><br>
+
+    <!-- Horizontal Alignment -->
+     <div class="h">
+        <body>
+            <div class="container">
+              <div class="child">I'm the parant element</div>
+            </div>
+          </body>
+     </div>
+     <br><br>
+
+
+    <!-- Verticle Alignment -->
+     <div class="v">
+        <div class="container">
+            <div class="child">I'm the parant element</div>
+          </div>
+     </div>
+
+</body>
+</html>

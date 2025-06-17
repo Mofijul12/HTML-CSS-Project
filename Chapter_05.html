@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter_05</title>
+    <style>
+      .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+  </head>
+  <body>
+    <a href="0_Home.html" class="back-to-home">Back to Home</a>
+    <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 05</h1>
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> HTML FORM</h3>
+    <!-- HTML FORM -->
+    <form action="/login">
+      <!-- Label & Input-->
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="firstname" />
+      <br>
+      <br>
+
+      <!-- Text Area -->
+      <textarea name="comment" rows="3" cols="30"> </textarea>
+      <br>
+
+      <!-- Select & Option -->
+      <select name="car">
+        <option value="bangladesh">Bangladesh</option>
+        <option value="srilanka">Srilanka</option>
+        <option value="maldives">Maldives</option>
+        <option value="pakistan">Pakistan</option>
+      </select>
+      <br>
+
+
+      <!-- Optgroup -->
+      <select name="car">
+        <optgroup label="Dhaka">
+          <option value="tangail">Tangail</option>
+          <option value="manikganj">Manikganj</option>
+        </optgroup>
+        <optgroup label="Sirajganj">
+          <option value="belkuchi">Belkuchi</option>
+          <option value="enayetpur">Enayetpur</option>
+        </optgroup>
+      </select>
+      <br>
+      <br>
+
+
+      <!--   <fieldset> and <legend> -->
+      <fieldset>
+        <legend>Your Profile:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" />
+        <br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </fieldset>
+      <br>
+      <br>
+      <!--  <datalist> -->
+      <datalist id="division-list">
+        <option value="Dhaka"></option>
+        <option value="Sylet"></option>
+        <option value="Barisal"></option>
+        <option value="Rajshahi"></option>
+      </datalist>
+      <br>
+      <input type="text" name="division" list="division-list" />
+      <br>
+      <br>
+
+      <!-- Submit Button-->
+      <input type="submit" />
+      <br>
+      <br>
+
+      <!-- Reset Button -->
+      <input type="reset" />
+      <br>
+      <br>
+
+      <!-- Image as Submit Button -->
+      <input
+        type="image"
+        src="https://img.freepik.com/premium-vector/submit-button_592324-29849.jpg?w=740"
+        alt="Submit"
+        width="50"
+        height="50"/>
+        <br><br>
+
+      <!-- Text as Input Type -->
+      <input type="text" name="firstname" />
+      <br><br>
+
+      <!-- Password as Input Type -->
+      <input type="password" name="password" />
+      <br><br>
+
+      <!-- Email as Input Type -->
+      <input type="email" name="email" />
+      <br><br>
+
+      <!-- Input Type URL -->
+      <input type="url" name="website" />
+      <br><br>
+
+      <!-- Input Type HIDDEN -->
+      <input type="hidden" name="userId" value="456" />
+      <br><br>
+
+      <!-- Input Type Numbers -->
+      <input type="number" name="quantity" min="0" max="5" />
+      <br><br>
+
+      <!-- Input Type Range -->
+      <input type="range" name="rate" min="0" max="5" />
+      <br><br>
+
+      <!-- Input Type CHECKBOX -->
+      <input type="checkbox" id="bike" name="bike" value="Bike" />
+      <label for="bike">Bike</label>
+      <br><br>
+      <br />
+      <input type="checkbox" id="car" name="car" value="ar" />
+      <label for="car">Car</label>
+      <br><br>
+
+      <!-- Input Type RADIO -->
+      <input type="radio" id="male" name="male" value="Male" />
+      <label for="male">Male</label>
+      <br><br>
+
+      <input type="radio" id="female" name="female" value="female" />
+      <label for="female">Female</label>
+      <br><br>
+
+      <!-- Input Type FILE -->
+      <input type="file" name="upload" />
+      <br><br>
+
+      <!-- Input Type Date -->
+      <input type="date" name="date" />
+      <br><br>
+
+      <!-- Input Type Time -->
+      <input type="time" name="time" />
+      <br><br>
+
+      <!-- Input Type datetime-local -->
+      <input type="datetime-local" name="alarmDateTime" />
+      <br><br>
+
+      <!-- Input Type Color -->
+      <input type="color" name="bgcolor" />
+      <br><br>
+
+      <!-- Value Attribute -->
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="firstname" value="Mofijul" />
+
+      <!-- Placeholder -->
+      <input type="text" name="firstname" placeholder="Enter your first name" />
+
+      <!-- Readonly -->
+      <input type="text" name="fname" value="Noman" readonly />
+
+      <!-- Disabled -->
+      <input type="text" name="firstname" value="Akib" disabled />
+      <input type="submit" disabled />
+      <br><br>
+
+
+      <!-- Size -->
+      <input type="text" name="firstname" size="6" />
+      <select name="Car" size="2">
+        <option value="Toyota">Toyota</option>
+        <option value="Premio">Premio</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Audi">Audi</option>
+      </select>
+      <br><br>
+
+      <!-- Multiple -->
+      <select name="Car" multiple>
+        <option value="Toyota">Toyota</option>
+        <option value="Premio">Premio</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Audi">Audi</option>
+      </select>
+      <br><br>
+
+      <!-- Step -->
+      <input type="number" name="points" step="5" />
+      <br><br>
+
+      <!-- Width and Height -->
+      <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Iframe</h3>
+      <iframe
+        src="https://webflow.com/made-in-webflow/website/Interactive-Presentation"
+        width="900"
+        height="500"
+      ></iframe>
+
+      <!-- Auto Focus -->
+      <input type="text" name="fname" autofocus />
+
+      <!-- Auto Complete -->
+      <input type="text" name="fname" autocomplete />
+
+      <!-- Minlength -->
+      <input type="text" name="username" minlength="4" />
+
+      <!--Maxlength  -->
+      <input type="text" name="username" maxlength="5" />
+
+      <!-- Min and Max -->
+      <input type="number" name="quantity" min="1" max="6" />
+
+      <!-- Required -->
+      <input type="text" name="fname" required />
+
+      <!-- Pattern -->
+      <input
+        type="text"
+        name="code"
+        pattern="[A-Za-z]{3}"
+        title="Three
+      letter code."
+      />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter_012</title>
+    <link rel="stylesheet" href="Chapter012.css">
+    <style>
+      .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <a href="0_Home.html" class="back-to-home">Back to Home</a>
+  <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 12</h1>
+
+  <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Selector</h3>
+    <div>
+        <p>This is an example of type selector</p>
+    </div>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">ID Selector</h3>
+    <div>
+        <p id="ids">This is an example of id selector</p>
+    </div>
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Class Selector</h3>
+    <div class="cls1">
+        This is an example of class selector
+    </div>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Multiple Class Selector</h3>
+    <div class="cls2">
+        This is an example of multiple class selector
+    </div>
+
+    <div class="cls3">
+        This is an example of multiple class selector
+    </div>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Status of Links</h3>
+    <div>
+        <!-- Status of links -->
+        <a>This is not a link</a><br>
+        <a href="https://mofijul.com" target="_blank">My new Website</a><br>
+        <a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a>
+    </div>
+    <br>
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Cursor Interaction</h3>
+    <div>
+        <!-- Cuarsor Interaction -->
+       <button>Cuarsor Interaction</button>
+    </div>
+    <br>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Status Of Element</h3>
+    <div>
+        <!-- Status of Elements -->
+        <p>User's information</p>
+        <p>Your Name: <input type="text" value="your name" disabled /></p>
+        <p>Email: <input type="text" value="abc@email.com" /></p>
+    </div>
+    <br>
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Fprm Validation</h3>
+    <!-- Form Validation -->
+    <div>
+        <p>This text input must be a two-letter code:</p>
+        <form action="">
+            <input type="text" name="code" pattern="[A-z]{2}"title="Two letter code." value="p"> 
+        </form>
+    </div>
+    <br>
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Child Element</h3>
+    <!-- Child Element -->
+    <div>
+        <p>This is first line</p>
+        <p>This is second line</p>
+    </div>
+      <p>This is third line</p>
+      <p>This is fourth line</p>
+    <br>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> First Child</h3>
+    <!-- First-Child -->
+    <div class="fc">
+    <div>
+    <p>State-Line 1</p>
+    <p>State-Line 2</p>
+    </div>
+    <p>State-Line 3</p>
+    <p>State-Line 4</p>
+    </div>
+    <br>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Nth Child</h3>
+    <!-- Nth-Child -->
+     <div class="nthc">
+        <div>
+            <p>State-Line 1</p>
+            <p>State-Line 2</p>
+            <p>State-Line 3</p>
+          </div>
+          <p>State-Line 4</p>
+          <p>State-Line 5</p>
+          <p>State-Line 6</p>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Only Child</h3>
+     <!-- Only Child -->
+      <div class="onc">
+        <div>
+        <p>State-Line 1</p>
+        </div>
+        <p>State-Line 2</p>
+        <p>State-Line 3</p>
+      </div>
+      <br>
+
+
+      <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> First Of Type</h3>
+    <!-- First of Type -->
+     <div class="fst">
+        <div>
+        <div>State-Line 1</div>
+        <p>State-Line 2</p>
+        <p>State-Line 3</p>
+        </div>
+        <p>State-Line 4</p>
+       </div>
+       <br>
+    
+
+       <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Last Of Type</h3>
+    <!-- Last of Type -->
+     <div class="lst">
+        <p>State-Line 1</p>
+        <div>
+          <p>State-Line 2</p>
+          <p>State-Line 3</p>
+          <div>State-Line 4</div>
+        </div>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Nth Of Type</h3>
+     <!-- Nth Of Type -->
+     <div class="ntp">
+        <div>
+        <div>State-Line 1</div>
+        <p>State-Line 2</p>
+        <p>State-Line 3</p>
+        </div>
+        <p>State-Line 4</p>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Nth Only Of Type</h3>
+     <!--  Nth Only of Type -->
+       <div class="nthlod">
+        <div>
+            <div>State-Line 1</div>
+            <p>State-Line 2</p>
+            <p>State-Line 3</p>
+          </div>
+          <p>State-Line 4</p>
+       </div>
+       <br>
+    
+       <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Other Pseudo Class</h3>
+    <!-- Other Pseudo  Classes-->
+     <div class="psc">
+        <div></div>
+        <div></div>
+        <div>This is empty!</div>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Target</h3>
+    <!-- Target -->
+    <div class="tg">
+    <a href="#target1">Option target 1</a>
+    <a href="#target2">Option target 2</a>
+    <p id="target1">Target 1</p>
+    <p id="target2">Target 2</p>
+    </div>
+    <br>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Not Selector</h3>
+    <!-- Not Selector -->
+     <div class="ns">
+        <p>User's information</p>
+        <p>Address: <input type="text" value="Your address" /></p>
+        <p>Email: <input type="text" value="abc@email.com" /></p>
+        <input type="submit" value="Submit" />
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> First Liner</h3>
+    <!-- First Liner -->
+     <div class="fsl">
+        <p>My latter has<br />two lines.</p>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Before</h3>
+    <!-- Before -->
+    <div class="bf">
+    <p>
+        <label class="required">Your Name: </label>
+        <input type="text" />
+        </p>
+        <p>
+        <label>Email: </label>
+        <input type="email" />
+    </p>
+    </div>
+    <br>
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> After</h3>
+    <!-- After -->
+     <div class="af">
+        <p>
+            <label class="required">Your Name: </label>
+            <input type="text" />
+          </p>
+          <p>
+            <label>Email: </label>
+            <input type="email" />
+        </p>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Selection</h3>
+     <!-- Selection -->
+     <div class="sl">
+        <p>Please select more text in this latter.</p>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Descedant Selector</h3>
+    <!-- Descedant Selector -->
+     <div class="dsc">
+        <div class="container">
+            <div>
+              <p>State-line 1</p>
+            </div>
+            <p>State-line 2</p>
+          </div>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Child Selector</h3>
+    <!-- Child Selector -->
+     <div class="chs">
+        <div class="container">
+            <div>
+              <p>State-line 1</p>
+            </div>
+            <p>State-line 2</p>
+          </div>
+     </div>
+     <br>
+
+     
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">Adjascent Selector</h3>
+    <!-- Adjascent Selector -->
+     <div class="adc">
+        <div class="container">
+            <div>
+              <p>State-line 1</p>
+            </div>
+            <p>This is Adjascent Selected</p>
+            <p>State-line 3</p>
+          </div>
+     </div>
+     <br>
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);">General Sibling Selector</h3>
+    <!-- Geneal Sibling Selector-->
+     <div class="gss">
+        <div class="container">
+            <div>
+              <p>State-line 1</p>
+            </div>
+            <p>State-line 2</p>
+            <p>State-line 3</p>
+          </div>
+     </div>
+     <br>
+
+
+     <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Attribute</h3>
+     <!-- Attribute -->
+      <div class="atb">
+        <div>
+            <p class="text">Many text</p>
+          </div>
+          <p>More text</p>
+      </div>
+</body>
+</html>

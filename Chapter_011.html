@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        #int{
+            color: red;
+        }
+
+        .back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+  <a href="0_Home.html" class="back-to-home">Back to Home</a>
+  <h1 style="text-align: center; border: 2px solid; background-color: aquamarine;">Chapter 11</h1>
+
+  <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Inline CSS</h3>
+    <!-- Inline Css -->
+    <p style="color: rgb(4, 247, 255); font-size: 26px">Hello Bangladesh</p>
+    <p>Hello Dhaka</p>
+    <p>This is the first paragraph.</p>
+    <p id="int">This is the second paragraph.</p>
+
+
+
+    <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Relative Length</h3>
+    <!-- Relative Length -->
+    <article>
+        <p>
+          This element does not have its style, so that the font-size will be
+   30px, inherited from its parent (article)
+        </p>
+        <p class="custom">
+          This element has style "font-size: 1.5em" so that the font-size will
+   be 30px (20 * 1.5 = 30)
+        </p>
+      </article>
+
+      <div class="parent">
+        I'm 15px
+        <div class="child">
+          I'm 30px, as expected
+          <div class="child">I'm 60px, oh no!</div>
+        </div>
+      </div>
+
+
+      <h3 style="text-decoration: underline; background-color: rgba(255, 230, 0, 0.753);"> Rem</h3>
+      <!-- Rem -->
+      <div class="parent">
+        I'm 15px
+        <div class="child">
+          I'm 32px, as expected
+          <div class="child">I'm 32px, good!</div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Universal Selector */
+*{
+background-color: whitesmoke;
+}
+
+/* Type Selector */
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(10, 39, 114);
+    font-size: 18px;
+}
+
+/*Id Selector */
+#ids{
+    font-size: 20px;
+    color: black;
+}
+
+/* Class Selector */
+.cls1{
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Multiple Class Selector */
+.cls2{
+    color: rgb(9, 128, 0);
+    font-weight: bolder;
+}
+.cls3{
+    color: rgb(83, 3, 16);
+    font-weight: bolder;
+}
+
+/* Cursor Interaction */
+button:focus {
+    color: rgb(233, 13, 13);
+  }
+
+/* Status of Elements */
+  button:hover {
+    color:white;
+    background-color: red;
+  }
+
+  button:active {
+    color: blue;
+  }
+
+  :enabled {
+    background-color: rgb(29, 251, 251);
+  }
+
+  :disabled {
+    background-color: #6979d7;
+  }
+
+/* Form Validation */
+  input:invalid {
+        background-color: rgb(196, 235, 23);
+ }
+
+/* Child Eliment */
+p:first-child {
+    color: rgb(2, 77, 2);
+  }
+
+/* First-Child */
+.fc{
+p:first-child {
+    color: rgb(25, 0, 255);
+font-weight: bold;
+font-size: 20px;
+}}
+
+/* Nth-Child */
+.nthc{
+    p:nth-child(2) {
+        color: green;
+        font-weight: bolder;
+      }
+}
+
+/* Only Child */
+.onc{
+    p:only-child {
+        color: rgb(193, 13, 0);
+      }
+}
+
+/* First of Type */
+.fst{
+    p:first-of-type {
+        color: rgb(0, 157, 255);
+      }
+}
+
+/* Last of type */
+.lst{
+    p:last-of-type {
+        color: rgb(0, 255, 85);
+      }
+}
+
+/* Nth of Type */
+.ntp{
+    p:nth-of-type(2) {
+        color: rgb(255, 0, 0);
+      }
+}
+
+/* Nth Only of Type */
+.nthlod{
+    p:only-of-type {
+        color: rgba(145, 4, 112, 0.764);
+      }
+}
+
+/* Other Psudo Classes */
+.psc{
+    div:empty {
+        height: 40px;
+        border: 2px solid rgb(30, 3, 181);
+      }
+}
+
+/* Target */
+.tg{
+    :target {
+        border: 1px solid rgb(5, 235, 132);
+      }
+}
+
+/* Not Selector */
+.ns{
+    input:not([type="submit"]) {
+        background-color: rgb(0, 255, 26);
+      }
+}
+
+/* First Liner */
+.fsl{
+    p::first-line {
+        color: rgb(255, 0, 157);
+      }
+}
+
+/* Before */
+.bf{
+    .required::before {
+        content: "* ";
+        color: rgb(15, 254, 11);
+      }
+}
+
+/* After */
+.af{
+    .required::after {
+        content: "* ";
+        color: rgb(165, 12, 170);
+      }
+}
+
+/* Selection */
+.sl{
+    p::selection {
+        color: rgb(255, 0, 0);
+        background-color: rgb(0, 255, 8);
+      }
+}
+
+/* Descedant Selector */
+.dsc{
+    .container p {
+        color: rgb(255, 0, 0);
+      }
+}
+
+/* Child Selector */
+.chs{
+    .container > p {
+        color: rgb(0, 166, 255);
+      }
+}
+
+/* Adjascent Selector */
+.adc{
+    div + p {
+        color: rgb(47, 255, 0);
+      }
+}
+
+/* General Sibling Selector */
+.gss{
+    div ~ p {
+        color: rgb(219, 4, 76);
+      }
+}
+
+/* Attribute */
+.atb{
+    [class] {
+        color: rgb(0, 255, 98);
+      }
+}
